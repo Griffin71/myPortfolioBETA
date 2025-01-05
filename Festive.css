@@ -484,6 +484,123 @@ footer p {
     }
 }
 
+/* Comment Section Styles */
+#comments {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+#comments h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#comments p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#comment-name {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#comment-text {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.stars {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.star {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.star:hover {
+    color: #f39c12;
+}
+
+button[type="submit"] {
+    padding: 0.8rem 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Comment Display Styles */
+#comments-list {
+    margin-top: 2rem;
+}
+
+.comment-card {
+    padding: 1rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.comment-card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.comment-card small {
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #comments h2 {
+        font-size: 1.8rem;
+    }
+
+    #comment-name,
+    #comment-text {
+        font-size: 0.9rem;
+    }
+
+    .star {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #comments h2 {
+        font-size: 1.6rem;
+    }
+
+    .star {
+        font-size: 1rem;
+    }
+}
 
 
 logo {

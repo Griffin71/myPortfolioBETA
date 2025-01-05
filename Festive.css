@@ -357,6 +357,134 @@ footer p {
     }
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    .stars {
+        width: 120px;
+        justify-content: space-evenly;
+        display: flex;
+    }
+
+    .stars .star {
+        font-size: 20px !important; /* Ensure the star size is smaller */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .stars {
+        width: 100px;
+        justify-content: space-evenly;
+        display: flex;
+    }
+
+    .stars .star {
+        font-size: 18px !important; /* Ensure the star size is smaller */
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    .project-card {
+        width: 45%;
+    }
+
+    .stars {
+        width: 150px;
+        justify-content: space-evenly;
+        display: flex;
+    }
+
+    .stars .star {
+        font-size: 25px !important; /* Larger stars for medium screens */
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+
+    .project-card {
+        width: 30%;
+    }
+
+    .stars {
+        width: 180px;
+        justify-content: space-evenly;
+        display: flex;
+    }
+
+    .stars .star {
+        font-size: 30px !important; /* Larger stars for larger screens */
+    }
+}
+
+@media (max-width: 320px) {
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.8rem;
+    }
+
+    .project-card {
+        width: 95%;
+    }
+
+    .stars {
+        width: 80px;
+        justify-content: space-evenly;
+        display: flex;
+    }
+
+    .stars .star {
+        font-size: 15px !important; /* Smaller stars for extra small screens */
+    }
+}
+
+
 
 logo {
     font-size: 2em;

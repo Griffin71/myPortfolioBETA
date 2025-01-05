@@ -248,6 +248,15 @@ footer p {
     .project-card {
         width: 90%;
     }
+
+    .stars {
+        width: 120px; /* Adjusted for smaller screens */
+        justify-content: space-evenly;
+    }
+
+    .star {
+        font-size: 20px; /* Smaller stars */
+    }
 }
 
 @media (max-width: 480px) {
@@ -263,6 +272,15 @@ footer p {
     header p {
         font-size: 0.9rem;
     }
+
+    .stars {
+        width: 100px; /* Adjusted for smaller screens */
+        justify-content: space-evenly;
+    }
+
+    .star {
+        font-size: 18px; /* Smaller stars */
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
@@ -277,6 +295,15 @@ footer p {
     .project-card {
         width: 45%;
     }
+
+    .stars {
+        width: 150px; /* Larger stars on medium screens */
+        justify-content: space-evenly;
+    }
+
+    .star {
+        font-size: 25px; /* Larger stars */
+    }
 }
 
 @media (min-width: 1367px) and (max-width: 1920px) {
@@ -290,6 +317,15 @@ footer p {
 
     .project-card {
         width: 30%;
+    }
+
+    .stars {
+        width: 180px; /* Adjusted for larger screens */
+        justify-content: space-evenly;
+    }
+
+    .star {
+        font-size: 30px; /* Larger stars */
     }
 }
 
@@ -310,7 +346,17 @@ footer p {
     .project-card {
         width: 95%;
     }
+
+    .stars {
+        width: 80px; /* Adjusted for extra small screens */
+        justify-content: space-evenly;
+    }
+
+    .star {
+        font-size: 15px; /* Smaller stars */
+    }
 }
+
 
 logo {
     font-size: 2em;

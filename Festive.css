@@ -330,3 +330,41 @@ logo {
     font-size: 4em;
     color: #f4c542; /* Yellow color for the right brace */
 }
+
+/* Styling for rating system */
+.rating {
+    margin-top: 15px;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.star {
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star:hover,
+.star.selected {
+    color: gold;
+}
+
+/* Styling for average rating */
+.project-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.project-card .rating p {
+    margin: 5px 0;
+}
+
+.project-card .rating span {
+    font-weight: bold;
+}

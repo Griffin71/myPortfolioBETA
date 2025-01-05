@@ -1,0 +1,18 @@
+logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo .left-brace {
+    font-size: 4em;
+    color: #343a40; /* Dark color for the left brace */
+}
+
+.logo .right-brace {
+    font-size: 4em;
+    color: #f4c542; /* Yellow color for the right brace */
+}

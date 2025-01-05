@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kabelo Kgosana's Portfolio</title>
+    <title>BETA WEBSITES!!!!!</title>
     <!--<link rel="stylesheet" href="portfolio.css"> !!UPDATE THIS CSS!!-->
     <link rel="stylesheet" href="Festive.css">
     <link rel="stylesheet" href="fontawesome.css">
@@ -21,49 +21,108 @@
            <!-- <img src="img/Griffy.jpg" class="profile-pic">
             <h1>Kabelo Samkelo Kgosana</h1>
             <p>Your Digital Architect | Mobile Developer | Ethical Hacker | Software Developer</p>-->
-            <p>Everything that you will test today is in beta.</p>
+            <p>Everything that you will test today is in beta, heck even my company name's in beta.</p>
+            
         </div>
     </header>
     
 
 
     <section id="speciality">
-        <h2>Speciality</h2>
-        <p>My primary focus is Mobile Development, with expertise in building seamless and responsive applications that cater to modern-day needs. I aim to create user-friendly experiences and drive impactful results.</p>
+        <h2>Hi, I hope this goes without saying but...</h2>
+        <p>there will be penalties for not adhering by my <a href = "http://www.apache.org/licenses/">Apache Licence</a>. The licence can be found at the end/bottom of this page.</p>
+        <h3>Happy Testing.</h3>
     </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <div class="logo">
-                    <span class="left-brace">{</span>
-                    Line Tech
-                    <span class="right-brace">}</span>
+   <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <!-- Line Tech Project -->
+        <div class="project-card" id="project1">
+            <div class="logo">
+                <span class="left-brace">{</span>
+                Line Tech
+                <span class="right-brace">}</span>
+            </div>
+            <p>Line Tech is a professional digital solutions provider specializing in the creation of custom websites and mobile applications for businesses and individuals.</p>
+            <a href="https://griffin71.github.io/linetechh/">View Project</a>
+            <div class="rating">
+                <p>Rating: <span id="project1-rating">0</span> / 5</p>
+                <div class="stars">
+                    <button class="star" onclick="rateProject(1, 'project1')">☆</button>
+                    <button class="star" onclick="rateProject(2, 'project1')">☆</button>
+                    <button class="star" onclick="rateProject(3, 'project1')">☆</button>
+                    <button class="star" onclick="rateProject(4, 'project1')">☆</button>
+                    <button class="star" onclick="rateProject(5, 'project1')">☆</button>
                 </div>
-                <p>Line Tech is a professional digital solutions provider specializing in the creation of custom websites and mobile applications for businesses and individuals.</p>
-                <a href="https://griffin71.github.io/linetechh/">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Empowering-the-Nation</h3>
-                <img src="img/logo.jpg" class="profile-pic">
-                <p>The goal of Empowering the Nation is to support the professional and personal growth of domestic workers and gardeners by providing them with accessible and relevant courses. Employers can also benefit from understanding best practices and effective management techniques.</p>
-                <a href="https://griffin71.github.io/EmpoweringTheNation/">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>ST.-Lawrence-Prayers</h3>
-                <img src="img/ST4.jpg" class="profile-pic">
-                <p>The website we just developed is about ST. Lawrence, focusing on providing a study guide related to his life and various aspects of Christian faith and practice.</p>
-                <a href="https://griffin71.github.io/ST.-Lawrence-Prayers/">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Hack-Man</h3>
-                <img src="img/hack.jpg" class="profile-pic">
-                <p>Welcome to HackMan, a challenging and engaging platform designed for users to solve math problems and unlock access codes. Perfect for those who enjoy puzzles, learning, and a touch of hacker-style aesthetics!</p>
-                <a href="https://griffin71.github.io/HackMan/">View Project</a>
+                <p>Average Rating: <span id="project1-avg-rating">0</span> / 5</p>
             </div>
         </div>
-    </section>
+
+        <!-- Empowering the Nation Project -->
+        <div class="project-card" id="project2">
+            <h3>Empowering-the-Nation</h3>
+            <img src="img/logo.jpg" class="profile-pic">
+            <p>The goal of Empowering the Nation is to support the professional and personal growth of domestic workers and gardeners by providing them with accessible and relevant courses. Employers can also benefit from understanding best practices and effective management techniques.</p>
+            <a href="https://griffin71.github.io/EmpoweringTheNation/">View Project</a>
+            <div class="rating">
+                <p>Rating: <span id="project2-rating">0</span> / 5</p>
+                <div class="stars">
+                    <button class="star" onclick="rateProject(1, 'project2')">☆</button>
+                    <button class="star" onclick="rateProject(2, 'project2')">☆</button>
+                    <button class="star" onclick="rateProject(3, 'project2')">☆</button>
+                    <button class="star" onclick="rateProject(4, 'project2')">☆</button>
+                    <button class="star" onclick="rateProject(5, 'project2')">☆</button>
+                </div>
+                <p>Average Rating: <span id="project2-avg-rating">0</span> / 5</p>
+            </div>
+        </div>
+
+        <!-- ST. Lawrence Prayers Project -->
+        <div class="project-card" id="project3">
+            <h3>ST.-Lawrence-Prayers</h3>
+            <img src="img/ST4.jpg" class="profile-pic">
+            <p>The website we just developed is about ST. Lawrence, focusing on providing a study guide related to his life and various aspects of Christian faith and practice.</p>
+            <a href="https://griffin71.github.io/ST.-Lawrence-Prayers/">View Project</a>
+            <div class="rating">
+                <p>Rating: <span id="project3-rating">0</span> / 5</p>
+                <div class="stars">
+                    <button class="star" onclick="rateProject(1, 'project3')">☆</button>
+                    <button class="star" onclick="rateProject(2, 'project3')">☆</button>
+                    <button class="star" onclick="rateProject(3, 'project3')">☆</button>
+                    <button class="star" onclick="rateProject(4, 'project3')">☆</button>
+                    <button class="star" onclick="rateProject(5, 'project3')">☆</button>
+                </div>
+                <p>Average Rating: <span id="project3-avg-rating">0</span> / 5</p>
+            </div>
+        </div>
+
+        <!-- Hack-Man Project -->
+        <div class="project-card" id="project4">
+            <h3>Hack-Man</h3>
+            <img src="img/hack.jpg" class="profile-pic">
+            <p>Welcome to HackMan, a challenging and engaging platform designed for users to solve math problems and unlock access codes. Perfect for those who enjoy puzzles, learning, and a touch of hacker-style aesthetics!</p>
+            <a href="https://griffin71.github.io/HackMan/">View Project</a>
+            <div class="rating">
+                <p>Rating: <span id="project4-rating">0</span> / 5</p>
+                <div class="stars">
+                    <button class="star" onclick="rateProject(1, 'project4')">☆</button>
+                    <button class="star" onclick="rateProject(2, 'project4')">☆</button>
+                    <button class="star" onclick="rateProject(3, 'project4')">☆</button>
+                    <button class="star" onclick="rateProject(4, 'project4')">☆</button>
+                    <button class="star" onclick="rateProject(5, 'project4')">☆</button>
+                </div>
+                <p>Average Rating: <span id="project4-avg-rating">0</span> / 5</p>
+            </div>
+        </div>
+
+        <!-- Upcoming Projects -->
+        <div class="project-card">
+            <h3>There are more projects coming soon...</h3>
+            <a href="https://griffin71.github.io/myPortfolioBETA/">So Drop By Every Once In a While</a>
+        </div>
+    </div>
+</section>
 
     <section id="social-links">
         <h2>Connect With Me</h2>
@@ -76,7 +135,8 @@
             </a>
         </div>
     </section>
-
+<!--comment section-->
+    
     <section id="about">
         <h2>Licence</h2>
         <p>

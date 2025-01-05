@@ -136,13 +136,13 @@
         </div>
     </section>
 <!--comment section-->
-    <section id="comments">
+   <section id="comments">
     <h2>Leave a Comment</h2>
     <p>Please tell the world which website/s you tested and give it a rating of 5 and why you gave it that...</p>
     <form id="comment-form">
         <input type="text" id="comment-name" placeholder="Your Name" required>
-        <textarea id="comment-text" placeholder="Your Comment..." maxlength="10000" required></textarea>
-        <div class="rating">
+        <textarea id="comment-text" placeholder="Your Comment..." maxlength="10000" required disabled></textarea>
+        <div class="rating" disabled>
             <p>Rating: <span id="comment-rating">0</span> / 5</p>
             <div class="stars">
                 <button class="star" onclick="rateComment(1)">☆</button>
@@ -152,11 +152,12 @@
                 <button class="star" onclick="rateComment(5)">☆</button>
             </div>
         </div>
-        <button type="submit">Submit Comment</button>
+        <button type="submit" disabled>Submit Comment</button>
     </form>
 
     <div id="comments-list"></div>
 </section>
+
 
     <section id="about">
         <h2>Licence</h2>

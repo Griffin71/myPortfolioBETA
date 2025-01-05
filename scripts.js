@@ -136,4 +136,84 @@ function rateComment(rating) {
     document.getElementById("comment-rating").innerText = rating;
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Load saved comments from localStorage
+    loadComments();
+
+    // Enable comment and rating when username is entered
+    document.getElementById("comment-name").addEventListener("input", function() {
+        if (this.value.trim() !== "") {
+            // Enable the comment textarea, stars, and submit button
+            document.getElementById("comment-text").disabled = false;
+            document.querySelectorAll(".star").forEach(star => star.disabled = false);
+            document.querySelector("button[type='submit']").disabled = false;
+        } else {
+            // Disable the comment textarea, stars, and submit button if no username
+            document.getElementById("comment-text").disabled = true;
+            document.querySelectorAll(".star").forEach(star => star.disabled = true);
+            document.querySelector("button[type='submit']").disabled = true;
+        }
+    });
+
+    // Handle comment submission
+    document.getElementById("comment-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        submitComment();
+    });
+});
+
+// Function to submit a comment
+function submitComment() {
+    const name = document.getElementById("comment-name").value;
+    const text = document.getElementById("comment-text").value;
+    const rating = document.getElementById("comment-rating").innerText;
+
+    const newComment = {
+        name: name,
+        text: text,
+        rating: rating,
+        timestamp: new Date().toLocaleString()
+    };
+
+    // Get existing comments from localStorage
+    let comments = JSON.parse(localStorage.getItem("comments")) || [];
+
+    // Add new comment to the list
+    comments.push(newComment);
+
+    // Save updated comments to localStorage
+    localStorage.setItem("comments", JSON.stringify(comments));
+
+    // Clear form
+    document.getElementById("comment-name").value = '';
+    document.getElementById("comment-text").value = '';
+    document.getElementById("comment-rating").innerText = '0';
+
+    // Reload comments
+    loadComments();
+}
+
+// Function to load and display comments
+function loadComments() {
+    const commentsList = document.getElementById("comments-list");
+    const comments = JSON.parse(localStorage.getItem("comments")) || [];
+
+    commentsList.innerHTML = ''; // Clear the comment list
+
+    comments.forEach(comment => {
+        const commentDiv = document.createElement("div");
+        commentDiv.classList.add("comment-card");
+        commentDiv.innerHTML = `
+            <p><strong>${comment.name}</strong> <small>(${comment.timestamp})</small></p>
+            <p>${comment.text}</p>
+            <p>Rating: ${comment.rating} / 5</p>
+        `;
+        commentsList.appendChild(commentDiv);
+    });
+}
+
+// Function to set the rating for the comment
+function rateComment(rating) {
+    document.getElementById("comment-rating").innerText = rating;
+}
 

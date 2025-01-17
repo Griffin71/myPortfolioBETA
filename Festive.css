@@ -444,7 +444,7 @@ footer p {
     }
 
     .stars {
-        width: 180px; /* Adjusted for larger screens */
+        width: 200px; /* Adjusted for larger screens */
         justify-content: space-evenly;
     }
 
@@ -496,7 +496,7 @@ footer p {
     }
 
     .stars {
-        width: 120px;
+        width: 140px;
         justify-content: space-evenly;
         display: flex;
     }
@@ -551,7 +551,8 @@ footer p {
     }
 
     .stars .star {
-        font-size: 25px !important; /* Larger stars for medium screens */
+        font-size: 35px !important; /* Larger stars for medium screens */
+        
     }
 }
 
